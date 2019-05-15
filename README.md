@@ -23,3 +23,6 @@ Create Read Update and Delete framework using JS
 
 ### Advanced Reqs
 - [ ] Allow users to rate the suggested activities that they were presented with initially.
+
+### Very Advanced Reqs
+- [ ] Suggest activities to the users not only based on interests now, but also based on location, and events happening nearby. 
