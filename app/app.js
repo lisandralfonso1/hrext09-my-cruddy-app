@@ -1,12 +1,11 @@
-/*
 
+/*
  ### Basic Reqs
 - [ ] Where to store data? (localstorage)
 - [ ] How to caputure data? (web form)
 - [ ] How to modify data? (update action, delete action)
 - [ ] How to view data? (style?)
 - [ ] UI/UX considerations (how are we going to use this)
-
 */
 
 //localStorage interaction function
@@ -69,3 +68,38 @@ $(document).ready(function() {
     }
   });
 });
+
+// Interest 
+//  name => string
+//  listOfActivities => ['activity 1', ...]
+ 
+// {
+//   name:'',
+//   listOfActivities: []
+// }
+
+// /*
+// form to insert a new Interest, and to add/remove from listOfActivities
+// */
+
+// function addInterest(name, arrayOfActivities) {
+//   // add the Interest with a name
+//   // loop over arrayOfActivities
+//     // addActivity(arrayOfActivities[i])
+// }
+
+// function addActivity(name, interest){
+//   // adds activity to interest object
+//   // at key listOfActivities
+//   // i.e. interest.listOfActivities.push(name)
+// }
+
+// function removeInterest(name) {
+//   // removes the Interest with a name
+// }
+
+// function removeActivity(name, interest){
+//   // removes activity to interest object
+//   // at key listOfActivities
+//   // i.e. interest.listOfActivities.push(name)
+// }
