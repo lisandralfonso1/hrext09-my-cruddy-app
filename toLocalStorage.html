@@ -11,14 +11,27 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
 </head>
 <body>
-  <p>Here you can add your own interests and activities, that way you can refer to them wghen you're bored in the future</p>
-  <form>
-    <input id="keyInput" type="text" placeholder="Interest"></input>
-    <input id="valueInput" type="text" placeholder="List of Activities"></input>
-    <input type="button" onclick="window.location.href = 'index.html';" value="Home"/>
-    <button id="createButton" type='submit'>Add new interest and activities</button>
-    <button id="updateButton" type='submit'>Replace previous list of activities to this interest</button>
+  
+  <header class="header">
+    <p>Here you can add your own interests and activities, that way you can refer to them wghen you're bored in the future</p>
+  </header>
+
+<form class="buttonsInputs">
+
+    <div class="inputsContainer">
+      <input id="keyInput" type="text" placeholder="Interest"></input>
+      <input id="valueInput" type="text" placeholder="List of Activities"></input>
+    </div>
+
+    <div class="buttonsContainer">
+      <input type="button" onclick="window.location.href = 'index.html';" value="Home"/>
+      <button id="createButton" type='submit'>Add new interest and activities</button>
+      <button id="updateButton" type='submit'>Replace previous list of activities to this interest</button>
+    </div>
+
   </form>
+
   <script src='app/app.js'></script>
 </body>
 </html>
+

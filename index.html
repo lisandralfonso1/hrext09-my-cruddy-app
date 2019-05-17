@@ -11,24 +11,37 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
 </head>
 <body>
-  <h1>Boredly</h1>
-  <h2>A lazy person's happy place</h2>
-  <p>Hi, welcome to Boredly! A place where you will be never judged, and will be always loved.</p>
-  <p>We understand how hard it is to have nothing to do. Recent studies suggest that easily bored people are at higher risk for depression, anxiety, drug addiction, eating disorders, and hostility, among others. We want you to find the activities that interest you to the most, so that you don’t waste any of your precious time.</p>
-  <p>Are you bored? Get on board!</p>
-  <form>
-    <input type="button" onclick="window.location.href = 'toSelectInterests.html';" value="Click here to select your interests"/>
-    <input type="button" onclick="window.location.href = 'toLocalStorage.html';" value="Add your own interests and activities"/>
+
+  <header class="header">
+    <div class="headerContainer">
+      <h1>Boredly</h1>
+      <h2>A lazy person's happy place</h2>
+    </div>
+  </header>
+
+  <section class="objectives">
+    <div class="objectivesContainer">
+      <p>Hi, welcome to Boredly! A place where you will be never judged, and will be always loved.</p>
+      <p>We understand how hard it is to have nothing to do. Recent studies suggest that easily bored people are at higher risk for depression, anxiety, drug addiction, eating disorders, and hostility, among others. We want you to find the activities that interest you to the most, so that you don’t waste any of your precious time.</p>
+      <p>Are you bored? Get on board!</p>
+    </div>
+  </section>
+
+  <form class="buttons">
+    <div class="buttonsContainer">
+      <input type="button" onclick="window.location.href = 'toSelectInterests.html';" value="Click here to select your interests"/>
+      <input type="button" onclick="window.location.href = 'toLocalStorage.html';" value="Add your own interests and activities"/>
+    </div>
   </form>
-  <script src='app/app.js'></script>
-  <footer>
+
+  <footer class="footer"> 
+    <div class="footerContainer">
       <p>Attention: If you have been here over 10 times this week, you need to do <a href="https://media.giphy.com/media/1fjf2AFcz8UA8W5GKm/giphy.gif">this</a></p>
       <p>To see events happening near your area <a href="https://www.eventbrite.com/">click here</a></p>
       <p>For ideas, suggestions, and complaints contact us <a href="mailto:codingwithlis@gmail.com?subject=Reaching%20Out&body=How%20are%20you">here</a></p>
+    </div>
   </footer>
+  
+  <script src='app/app.js'></script>
 </body>
 </html>
-
-
-
-  
