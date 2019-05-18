@@ -45,3 +45,130 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* .container {
+  background: #FF6067;
+  height: 100px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+ */
+
+.blacksection {
+  background: #282828;
+  height: 35px;
+}
+
+.header {
+  color: white;
+  background: #FF6067;
+  height: 100px;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  
+}
+.site-title {
+  font-size: 62px;
+  color: white;
+  padding: 20px;
+  font-family: Comic Sans MS; 
+  font-weight: 400;
+}
+.site-tagline {
+  font-size: 20px;
+  font-style: italic;
+
+  width: 25%;
+  font-family: Comic Sans MS; 
+  font-weight: 400;
+
+}
+.buttonsContainer {
+  background: #F7EE1A;
+  height: 35px;
+  text-align: center;
+  color: #1A577F;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+#button1 {
+  font-size: 14px;
+  font-family: Comic Sans MS; 
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 0;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  color:#1A577F;
+  background-color: #F7EE1A;
+}
+
+#button1:hover {
+  color: #1A577F;
+  border-color: #1A577F;
+  background-color: #F7EE1A;
+}
+
+#button2 {
+  font-size: 14px;
+  font-family: Comic Sans MS; 
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 0;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  color: #1A577F;
+  background-color: #F7EE1A;
+}
+#button2:hover {
+  color: #1A577F;
+  border-color: #1A577F;
+  background-color: #F7EE1A;
+}
+
+.objectivesContainer {
+  background: #D7F7FE;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.wordsContainer{
+  font-size: 30px;
+  font-family: Comic Sans MS; 
+  background: #b1dbf0;
+  color: #1A577F;
+  width: 75%;
+  height: 300px;
+  border-bottom: 5px solid #F7EE1A;
+  margin-bottom: 2.1875em;
+}
+
+.footerContainer {
+  background:  #282828;
+  height: 75px;
+}
+
+
+
+

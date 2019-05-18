@@ -11,28 +11,34 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
 </head>
 <body>
-
+  <section class="blacksection"></section>
+  
   <header class="header">
-    <div class="headerContainer">
-      <h1>Boredly</h1>
-      <h2>A lazy person's happy place</h2>
+    <div class="container">
+        <h1 class="site-title">Boredly</h1>
+        <span class="site-tagline">A lazy person's happy place!</span>
     </div>
   </header>
 
-  <section class="objectives">
-    <div class="objectivesContainer">
-      <p>Hi, welcome to Boredly! A place where you will be never judged, and will be always loved.</p>
-      <p>We understand how hard it is to have nothing to do. Recent studies suggest that easily bored people are at higher risk for depression, anxiety, drug addiction, eating disorders, and hostility, among others. We want you to find the activities that interest you to the most, so that you don’t waste any of your precious time.</p>
-      <p>Are you bored? Get on board!</p>
-    </div>
-  </section>
-
   <form class="buttons">
     <div class="buttonsContainer">
-      <input type="button" onclick="window.location.href = 'toSelectInterests.html';" value="Click here to select your interests"/>
-      <input type="button" onclick="window.location.href = 'toLocalStorage.html';" value="Add your own interests and activities"/>
+      <input id="button1" type="button" onclick="window.location.href = 'toSelectInterests.html';" value="     SELECT  YOUR  INTERESTS     "/>
+      <input id="button2" type="button" onclick="window.location.href = 'toLocalStorage.html';" value="     ADD INTERESTS AND ACTIVITIES     "/>
     </div>
   </form>
+
+
+  <section class="objectives">
+    <div class="objectivesContainer">
+      <div class="wordsContainer" >
+        <p>Hi, welcome to Boredly!</p>
+        <p>A place where you will be never judged, and will be always loved.</p>
+        <p>We understand how hard it is to have nothing to do. </p>
+        <p>Recent studies suggest that easily bored people are at higher risk for depression, anxiety, drug addiction, eating disorders, and hostility, among others. We want you to find the activities that interest you to the most, so that you don’t waste any of your precious time.</p>
+        <p>Are you bored? Get on board!</p>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer"> 
     <div class="footerContainer">
@@ -45,3 +51,35 @@
   <script src='app/app.js'></script>
 </body>
 </html>
+
+<!-- 
+{
+  name:'',
+  listOfActivities: []
+}
+
+/*
+form to insert a new Interest, and to add/remove from listOfActivities
+*/
+
+function addInterest(name, arrayOfActivities) {
+  // add the Interest with a name
+  // loop over arrayOfActivities
+    // addActivity(arrayOfActivities[i])
+}
+
+function addActivity(name, interest){
+  // adds activity to interest object
+  // at key listOfActivities
+  // i.e. interest.listOfActivities.push(name)
+}
+
+function removeInterest(name) {
+  // removes the Interest with a name
+}
+
+function removeActivity(name, interest){
+  // removes activity to interest object
+  // at key listOfActivities
+  // i.e. interest.listOfActivities.push(name)
+} -->
