@@ -11,25 +11,33 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
 </head>
 <body>
-  
+
+  <section class="blacksection">
+    <input id="homeButton" type="button" onclick="window.location.href = 'index.html';" value="Home"/>
+  </section>
+
   <header class="header">
-    <p>Here you can add your own interests and activities, that way you can refer to them wghen you're bored in the future</p>
+    <div class="container">
+      <p>Add your own interests and activities, or replace the activities to your previous added interests!</p>
+    </div>
   </header>
-
-<form class="buttonsInputs">
-
-    <div class="inputsContainer">
+  
+  <section class="smallYellow"></section>
+  
+  <form class="formContainer">
+    <div class="inputs">
       <input id="keyInput" type="text" placeholder="Interest"></input>
       <input id="valueInput" type="text" placeholder="List of Activities"></input>
     </div>
 
-    <div class="buttonsContainer">
-      <input type="button" onclick="window.location.href = 'index.html';" value="Home"/>
-      <button id="createButton" type='submit'>Add new interest and activities</button>
-      <button id="updateButton" type='submit'>Replace previous list of activities to this interest</button>
+    <div class="buttons">
+      <button id="createButton" type='submit'>Add</button>
+      <button id="updateButton" type='submit'>Replace</button>
     </div>
 
   </form>
+    <footer class="footer"> 
+  </footer>
 
   <script src='app/app.js'></script>
 </body>
