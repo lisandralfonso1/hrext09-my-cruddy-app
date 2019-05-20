@@ -146,7 +146,7 @@ table {
 
 .objectivesContainer {
   background: #D7F7FE;
-  height: 480px;
+  height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,11 +164,60 @@ table {
   margin-bottom: 2.1875em;
 }
 
-.footerContainer {
-  background:  #282828;
-  height: 75px;
+.firstrow {
+  display: flex;
+  justify-content: center;
+
 }
 
+.secondrow {
+  display: flex;
+  justify-content: center;
+}
+
+.thirdrow {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  padding: 10px;
+}
+
+.tagline {
+  display: flex;
+  justify-content: center;
+  background: #D7F7FE;
+  
+}
+.taglineWords {
+  position: relative;
+  bottom: 65px;
+  font-weight: bold;
+  color: #1A577F;
+  background: #D7F7FE;
+  font-size: 40px;
+  font-family: Comic Sans MS; 
+
+}
+
+.footer{
+background: #282828;
+height: 65px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+}
+
+.footerContainer {
+  font-size: 15px;
+  width:75%;
+  height: 40px;
+  font-family: Comic Sans MS; 
+  color: white;
+  background: grey;
+  display: flex;
+  justify-content: center; 
+} 
 
 
 
