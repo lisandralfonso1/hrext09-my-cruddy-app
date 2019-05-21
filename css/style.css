@@ -377,12 +377,12 @@ flex-direction: row;
 	border:1px solid #d1d1d1;
 	display:inline-block;
 	cursor:pointer;
-	color:#141214;
+	color:#282828;;
 	font-family:Arial;
 	font-size:15px;
 	padding:7px 25px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #1a0503;
+	text-shadow:0px 1px 0px #282828;;
 }
 #homeButton:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f2f2f2));
