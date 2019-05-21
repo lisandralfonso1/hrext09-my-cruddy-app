@@ -58,7 +58,6 @@ table {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  
 }
 .site-title {
   font-size: 62px;
@@ -88,7 +87,6 @@ table {
   display: flex;
   flex-direction: row;
 }
-
 #button1 {
   font-size: 14px;
   font-family: Comic Sans MS; 
@@ -102,13 +100,11 @@ table {
   color:#1A577F;
   background-color: #F7EE1A;
 }
-
 #button1:hover {
   color: #1A577F;
   border-color: #1A577F;
   background-color: #F7EE1A;
 }
-
 #button2 {
   font-size: 14px;
   font-family: Comic Sans MS; 
@@ -122,13 +118,11 @@ table {
   color: #1A577F;
   background-color: #F7EE1A;
 }
-
 #button2:hover {
   color: #1A577F;
   border-color: #1A577F;
   background-color: #F7EE1A;
 }
-
 .objectivesContainer {
   background: #D7F7FE;
   height: 440px;
@@ -137,8 +131,7 @@ table {
   align-items: center;
   flex-direction: row;
 }
-
-.wordsContainer{
+.wordsContainer {
   font-size: 30px;
   font-family: Comic Sans MS; 
   background: #b1dbf0;
@@ -148,30 +141,25 @@ table {
   border-bottom: 5px solid #F7EE1A;
   margin-bottom: 2.1875em;
 }
-
 .firstrow {
   display: flex;
   justify-content: center;
 
 }
-
 .secondrow {
   display: flex;
   justify-content: center;
 }
-
 .thirdrow {
   display: flex;
   justify-content: center;
   text-align: justify;
   padding: 10px;
 }
-
 .tagline {
   display: flex;
   justify-content: center;
   background: #D7F7FE;
-  
 }
 .taglineWords {
   position: relative;
@@ -181,10 +169,8 @@ table {
   background: #D7F7FE;
   font-size: 40px;
   font-family: Comic Sans MS; 
-
 }
-
-.footer{
+.footer {
 background: #282828;
 height: 65px;
 display: flex;
@@ -192,7 +178,6 @@ justify-content: center;
 align-items: center;
 flex-direction: row;
 }
-
 .footerContainer {
   font-size: 15px;
   width:75%;
@@ -208,39 +193,211 @@ flex-direction: row;
 
 /* toLocalStorage.html css start */
 
-
 .blacksection {
   background: #282828;
-  height: 45px;
+  height: 50px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-
-#homeButton{
-  margin-left: 50px;
-  font-size: 25px;
-  font-family: Comic Sans MS; 
-  background: white;
-  color: black;
-}
-
-#homeButton:hover {
-  color: white;
-  border-color: white;
-  background-color: #282828;;
-}
-
 .smallYellow {
   background: #F7EE1A;
   height: 20px;
 }
-
 .formContainer {
   background: #D7F7FE;
-  height: 490px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row; 
 }
+.tag {
+  margin-top: 10px;
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+  font-family: Comic Sans MS; 
+  font-weight: 400;
+}
+.explanationContainer {
+  background: #D7F7FE;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.explanation {
+  margin-top: 100px;
+  height: 140px;
+  width: 75%;
+  background: #b1dbf0;
+  color: #1A577F;
+  font-size: 20px;
+  font-family: Comic Sans MS; 
+  border-bottom: 5px solid #F7EE1A;
+  margin-bottom: 2.1875em;
+}
+.first{
+  margin-top: 10px; 
+  display: flex;
+  justify-content: center;
+}
+.second {
+  display: flex;
+  justify-content: center;
+}
+.third {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  padding: 10px;
+}
+.inputs{
+  margin-top: 100px;
+  height: 100px;
+  width: 50%;
+  background: #b1dbf0;
+  color: #1A577F;
+  font-size: 20px;
+  font-family: Comic Sans MS; 
+  border-bottom: 5px solid #F7EE1A;
+  margin-bottom: 2.1875em;
+}
+#keyInput {
+  height: 30px;
+  width: 200px;
+  background: white;
+  font-size: 15px;
+  font-family: Comic Sans MS; 
+  margin-top: 30px;
+  margin-left: 150px;
+}
+#valueInput {
+  height: 30px;
+  width: 200px;
+  background: white;
+  font-size: 15px;
+  font-family: Comic Sans MS; 
+}
+.buttons2 {
+  height: 60px;
+  background: #D7F7FE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; 
+}
+#createButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5',GradientType=0);
+	background-color:#1A577F;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+#createButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b1dbf0), color-stop(1, #b1dbf0));
+	background:-moz-linear-gradient(top, #b1dbf0 5%, #b1dbf0 100%);
+	background:-webkit-linear-gradient(top, ##b1dbf0 5%, #b1dbf0 100%);
+	background:-o-linear-gradient(top, #b1dbf0 5%, #b1dbf0 100%);
+	background:-ms-linear-gradient(top, #b1dbf0 5%, #b1dbf0 100%);
+	background:linear-gradient(to bottom, #b1dbf0 5%, ##b1dbf0 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff',GradientType=0);
+	background-color:#378de5;
+}
+#createButton:active {
+	position:relative;
+	top:1px;
+} 
+
+#updateButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5',GradientType=0);
+	background-color:#1A577F;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+#updateButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b1dbf0), color-stop(1, #b1dbf0));
+	background:-moz-linear-gradient(top, #b1dbf0 5%, #b1dbf0 100%);
+	background:-webkit-linear-gradient(top, ##b1dbf0 5%, #b1dbf0 100%);
+	background:-o-linear-gradient(top, #b1dbf0 5%, #b1dbf0 100%);
+	background:-ms-linear-gradient(top, #b1dbf0 5%, #b1dbf0 100%);
+	background:linear-gradient(to bottom, #b1dbf0 5%, ##b1dbf0 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff',GradientType=0);
+	background-color:#378de5;
+}
+#updateButton:active {
+	position:relative;
+	top:1px;
+} 
+#homeButton {
+  margin-left: 30px;
+	-moz-box-shadow: 3px 4px 0px 0px #969190;
+	-webkit-box-shadow: 3px 4px 0px 0px #969190;
+	box-shadow: 3px 4px 0px 0px #969190;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f2f2f2), color-stop(1, #ffffff));
+	background:-moz-linear-gradient(top, #f2f2f2 5%, #ffffff 100%);
+	background:-webkit-linear-gradient(top, #f2f2f2 5%, #ffffff 100%);
+	background:-o-linear-gradient(top, #f2f2f2 5%, #ffffff 100%);
+	background:-ms-linear-gradient(top, #f2f2f2 5%, #ffffff 100%);
+	background:linear-gradient(to bottom, #f2f2f2 5%, #ffffff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#ffffff',GradientType=0);
+	background-color:#f2f2f2;
+	-moz-border-radius:18px;
+	-webkit-border-radius:18px;
+	border-radius:18px;
+	border:1px solid #d1d1d1;
+	display:inline-block;
+	cursor:pointer;
+	color:#141214;
+	font-family:Arial;
+	font-size:15px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1a0503;
+}
+#homeButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f2f2f2));
+	background:-moz-linear-gradient(top, #ffffff 5%, #f2f2f2 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #f2f2f2 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #f2f2f2 100%);
+	background:-ms-linear-gradient(top, #ffffff 5%, #f2f2f2 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #f2f2f2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0);
+	background-color:#ffffff;
+}
+#homeButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* toLocalStorage.html css finish */
+        
