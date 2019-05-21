@@ -11,8 +11,17 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
 </head>
 <body>
-    <h1>Select your interests from the following:</h1>
-    <select class="mdb-select md-form" multiple searchable="Search here..">
+  <section class="blacksection">
+    <input id="homeButton" type="button" onclick="window.location.href = 'index.html';" value="Home"/>
+  </section>
+  <header class="header">
+    <div class="container">
+      <p class ="tag">Select your interests from the following:</p>
+    </div>
+  </header>
+  <section class="smallYellow"></section>
+  <section class="searchBarContainer"> 
+    <select class="searchBar" multiple searchable="Search here..">
         <option value="1">Cars</option>
         <option value="2">Yoga</option>
         <option value="3">Read/Write</option>
@@ -33,10 +42,11 @@
         <option value="18">Board Games</option>
         <option value="19">values from the local storage</option>
     </select>
-    <input type="button" onclick="window.location.href = 'toListOfActivities.html';" value="Enter"/>
-  <form>
-    <input type="button" onclick="window.location.href = 'index.html';" value="Home"/>
-  </form>
+  </section>
+    <section class="buttons2">
+        <input id="createButton" type="button" onclick="window.location.href = 'toListOfActivities.html';" value="Enter"/>
+      </section>
+    <footer class="footer"> </footer>
   <script src='app/app.js'></script>
 </body>
 </html>

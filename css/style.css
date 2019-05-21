@@ -323,7 +323,6 @@ flex-direction: row;
 	position:relative;
 	top:1px;
 } 
-
 #updateButton {
 	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
@@ -400,4 +399,49 @@ flex-direction: row;
 }
 
 /* toLocalStorage.html css finish */
-        
+      
+/* toSelectInterests.html css start */
+
+.searchBarContainer {
+  background: #D7F7FE;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; 
+}
+.searchBar {
+  margin-top: 100px;
+  height: 200px;
+  width: 50%;
+  background: #b1dbf0;
+  color: #1A577F;
+  font-size: 20px;
+  font-family: Comic Sans MS; 
+  border-bottom: 5px solid #F7EE1A;
+  margin-bottom: 2.1875em;
+  border:2px solid #1A577F;
+}
+::selection {
+  background:#FFFFCC; 
+}
+::-moz-selection {
+  background:#FFFFCC;
+}
+select option:hover,
+select option:focus,
+select option:active {
+  background: linear-gradient(#1A577F;, #1A577F;);
+  background-color: #1A577F; 
+  color: white;
+}
+select option:checked {
+  background: linear-gradient(#1A577F, #1A577F);
+  background-color: #1A577F;
+  color: white; 
+}  
+select:active, select:hover {
+  outline-color: #1A577F
+}
+
+/* toSelectInterests.html css finish */
