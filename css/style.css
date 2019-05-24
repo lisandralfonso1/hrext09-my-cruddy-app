@@ -206,7 +206,7 @@ flex-direction: row;
 }
 .formContainer {
   background: #D7F7FE;
-  height: 250px;
+  height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -222,7 +222,7 @@ flex-direction: row;
 }
 .explanationContainer {
   background: #D7F7FE;
-  height: 180px;
+  height: 140px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -404,9 +404,9 @@ flex-direction: row;
 
 .buttonClass{
   background: #D7F7FE;
-  height: 40px;
+  height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: row; 
 }
@@ -489,3 +489,41 @@ select:active, select:hover {
 } 
 /* toSelectInterests.html css finish */
 
+#cars, #yoga,#sing,#readWrite,#dance,#watchtv,#sports,#playVideoGames,#spendTimeWithFamily,#goDancing,#art,#jobRelatedActivities,#travel,#outdoorActivities,#volunteerWork,#puzzles
+{
+	background-color:#1A577F;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:4px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}
+
+.resultsCont {
+  background: #D7F7FE;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; 
+}
+
+.results{
+  margin-top: 50px;
+  height: 400px;
+  width: 75%;
+  background: #b1dbf0;
+  color: #1A577F;
+  font-size: 20px;
+  font-family: Comic Sans MS; 
+  border-bottom: 5px solid #F7EE1A;
+  margin-bottom: 2.1875em;
+  border:2px solid #1A577F;
+}

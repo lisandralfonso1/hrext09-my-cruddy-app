@@ -69,7 +69,7 @@ $(document).ready(function() {
 
   $("#cars").click(function(){
     console.log('words');
-    $(".display").text("if you enjoy cars you can always or");
+    $(".display").text("If you enjoy cars you can always or");
   });
 
   $("#yoga").click(function(){
