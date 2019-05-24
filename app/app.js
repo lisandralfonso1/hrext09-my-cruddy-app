@@ -13,51 +13,39 @@
 var getItem = function(key) {
   return window.localStorage.getItem(key);
 }
-
 //create
 var createItem = function(key, value) {
   return window.localStorage.setItem(key, value);
 }
-
 //update
 var updateItem = function(key, value) {
   return window.localStorage.setItem(key, value);
 }
-
 //delete
 var deleteItem = function(key) {
   return window.localStorage.removeItem(key);
 }
-
 //clear everything
 var clearEverything = function() {
   return window.localStorage.clear();
 }
-
+//does the key exist?
 var keyExists = function(key) {
   var currentValue = getItem(key);
   return currentValue !== null;
 }
-
-
-///////////////////////////////////////////
-//event handlers for the buttons and ... possibly the inputboxes
-  //preventdefault on button clicks
-
-
-  var addText = function(object) {
-    for (let key in object) {
-      if (typeof object[key] !== 'function' && key !== 'length') {
-        $(".results").append(`<div class="interests"> ${key}<span class="activities"> ${object[key]}</span></div>`)
-        console.log(object)
+//show Local Storage text
+var displayLS = function(obj) {
+    $('.results').html('');
+    for (let key in obj) {
+      if (typeof obj[key] !== 'function' && key !== 'length') {
+        $(".results").append(`<div class="interests"> Interest: ${key} Activities: <span class="activities"> ${obj[key]}</span></div>`)
+      }
     }
-    }
-  }
+  };
 
-   
-$(document).ready(function() {
-  myStorage = window.localStorage;
-
+  $(document).ready(function() {
+  //add new key and value set
   $('#createButton').click(function(event) {
     var currentKey = $("#keyInput").val();
     var currentValue = $("#valueInput").val();
@@ -65,120 +53,93 @@ $(document).ready(function() {
       alert('You already have an interest with this name. Try replacing its activities instead!')
     } else {
       createItem(currentKey, currentValue);
-      addText(localStorage);
+      displayLS(localStorage);
     }
   });
-
+  //update value to the key
   $('#updateButton').click(function(event) {
     event.preventDefault();
     var currentKey = $("#keyInput").val();
     var currentValue = $("#valueInput").val();
     if (keyExists(currentKey)) {
       updateItem(currentKey, currentValue);
-      addText(localStorage);
+      displayLS(localStorage);
     } else {
       alert('You have not added this interest yet. Try creating a new interest first!')
     }
   });
-
+  //delete key and value set
   $('#deleteButton').click(function(event) {
     event.preventDefault();
     var currentKey = $("#keyInput").val();
     var currentValue = $("#valueInput").val();
     if (keyExists(currentKey)) {
       deleteItem(currentKey, currentValue);
-      addText(localStorage);
+      displayLS(localStorage);
     }
   });
-
+  //clear all keys and values in Local Storage
   $('#clearButton').click(function(event) {
     clearEverything();
     $('.results').text('');
   });
-
+  //displaying activities to the interests
   $("#cars").click(function(){
     console.log('words');
-    $(".display").text("If you enjoy cars you can always or");
+    $(".display").text("If you are bored and you are interested in cars, something you can do is attend car events/meetings, or you can take your car for a nice car wash. You would also enjoy washing your car yourself, helping a friend or family member wash their car, and reading a book about how cars work, as well as watching YouTube videos about how cars are made and watching videos of cars racing.");
   });
-
   $("#yoga").click(function(){
     console.log('words');
-    $(".display").text("hi yoga");
+    $(".display").text("If you are bored and you are interested in yoga, something you can do is go practice yoga by the beach, or you can learn a new type of yoga. You would also enjoy letting the people you care about know of the important benefits that practicing yoga offers , teaching someone yoga, and even taking classes to be a yoga instructor, as well as practicing breathing activities and learning or implementing new poses.");
   });
-
   $("#sing").click(function(){
     console.log('words');
-    $(".display").text("hi sing");
+    $(".display").text("If you are bored and you are interested in singing, something you can do is take singing lessons, or you can offer singing lessons to someone. You would also enjoy becoming a singing instructor , writing a new song, and/or recording a new song, as well as applying for singing jobs near your area or simply singing in public!.");
   });
-
   $("#dance").click(function(){
     console.log('words');
-    $(".display").text("hi dance");
+    $(".display").text(  "If you are bored and you are interested in dancing, something you can do is attend a dancing class, or you can learn a new type of dance. You would also enjoy applying for dancing jobs near your area , teaching others how to dance, and attending parties where you can dance the night out, as well as planning choreographies by yourself or with your friends!"
+    );
   });
-
   $("#readWrite").click(function(){
     console.log('words');
-    $(".display").text("hi read/write");
+    $(".display").text("If you are bored and you are interested in reading and/or writing, something you can do is start writing your own book, or you can write a new book, if you have already written previous ones. You would also enjoy going shopping to your favorite bookstore for new arrivals , going to a library and reading for free, and reading to kids who are relatives, as well as exchanging books with friends and starting your own blog that talks about your favorite book or books.");
   });
-
   $("#sports").click(function(){
     console.log('words');
-    $(".display").text("hi sports");
+    $(".display").text("If you are bored and you are interested in REPLACE, something you can do is REPLACE, or you can REPLACE. You would also enjoy REPLACE , REPLACE, and REPLACE, as well as REPLACE and REPLACE.");
   });
- 
   $("#watchtv").click(function(){
     console.log('words');
-    $(".display").text("hi watchtv");
+    $(".display").text("If you are bored and you are interested in REPLACE, something you can do is REPLACE, or you can REPLACE. You would also enjoy REPLACE , REPLACE, and REPLACE, as well as REPLACE and REPLACE.");
   });
-
-  $("#sports").click(function(){
-    console.log('words');
-    $(".display").text("hi sports");
-  });
-
   $("#playVideoGames").click(function(){
     console.log('words');
-    $(".display").text("hi playVideoGames");
+    $(".display").text("If you are bored and you are interested in REPLACE, something you can do is REPLACE, or you can REPLACE. You would also enjoy REPLACE , REPLACE, and REPLACE, as well as REPLACE and REPLACE.");
   });
-
   $("#spendTimeWithFamily").click(function(){
     console.log('words');
-    $(".display").text("hi spendTimeWithFamily");
+    $(".display").text("If you are bored and you are interested in REPLACE, something you can do is REPLACE, or you can REPLACE. You would also enjoy REPLACE , REPLACE, and REPLACE, as well as REPLACE and REPLACE.");
   });
-
-  $("#goDancing").click(function(){
-    console.log('words');
-    $(".display").text("hi goDancing");
-  });
-
   $("#art").click(function(){
     console.log('words');
-    $(".display").text("hi art");
+    $(".display").text("If you are bored and you are interested in art, something you can do is visit a museum, or you could look for museum coupons online. You would also enjoy starting a new piece of art , reading about the history of art, and analyzing pieces of art online, as writing a blog about your favorite art works and sharing ideas about art with friends and family.");
   });
-
-  $("#jobRelatedActivities").click(function(){
-    console.log('words');
-    $(".display").text("hi jobRelatedActivities");
-  });
-
   $("#travel").click(function(){
     console.log('words');
-    $(".display").text("hi travel");
+    $(".display").text("If you are bored and you are interested in REPLACE, something you can do is REPLACE, or you can REPLACE. You would also enjoy REPLACE , REPLACE, and REPLACE, as well as REPLACE and REPLACE.");
   });
-
   $("#outdoorActivities").click(function(){
     console.log('words');
-    $(".display").text("hi outdoorActivities");
+    $(".display").text("If you are bored and you are interested in outdoor activities, something you can do is going swimming, or you can go play a sport. You would also enjoy playing volleyball at the beach or park , going camping with friends or family, and having a picnic, as well as walking or biking, exploring your home town or going fishing.");
   });
-
   $("#volunteerWork").click(function(){
     console.log('words');
-    $(".display").text("hi volunteerWork");
+    $(".display").text("If you are bored and you are interested in REPLACE, something you can do is REPLACE, or you can REPLACE. You would also enjoy REPLACE , REPLACE, and REPLACE, as well as REPLACE and REPLACE.");
   });
-
   $("#puzzles").click(function(){
     console.log('words');
-    $(".display").text("hi puzzles");
+    $(".display").text("If you are bored and you are interested in REPLACE, something you can do is REPLACE, or you can REPLACE. You would also enjoy REPLACE , REPLACE, and REPLACE, as well as REPLACE and REPLACE.");
   });
 
 });

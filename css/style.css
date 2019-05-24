@@ -478,10 +478,9 @@ flex-direction: row;
   align-items: center;
   flex-direction: row; 
 }
-
 .searchBarContainer {
   background: #D7F7FE;
-  height: 500px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -489,7 +488,7 @@ flex-direction: row;
 }
 .searchBar {
   margin-top: 100px;
-  height: 400px;
+  height: 200px;
   width: 75%;
   background: #b1dbf0;
   color: #1A577F;
@@ -498,6 +497,10 @@ flex-direction: row;
   border-bottom: 5px solid #F7EE1A;
   margin-bottom: 2.1875em;
   border:2px solid #1A577F;
+}
+.display {
+  margin-top: 10px;
+  padding: 30px;
 }
 ::selection {
   background:#FFFFCC; 
@@ -555,6 +558,7 @@ select:active, select:hover {
 	position:relative;
 	top:1px;
 } 
+
 /* toSelectInterests.html css finish */
 
 #cars, #yoga,#sing,#readWrite,#dance,#watchtv,#sports,#playVideoGames,#spendTimeWithFamily,#goDancing,#art,#jobRelatedActivities,#travel,#outdoorActivities,#volunteerWork,#puzzles
@@ -573,7 +577,6 @@ select:active, select:hover {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #154682;
 }
-
 .resultsCont {
   background: #D7F7FE;
   height: 600px;
@@ -582,7 +585,6 @@ select:active, select:hover {
   align-items: center;
   flex-direction: row; 
 }
-
 .results{
   margin-top: 40px;
   height: 400px;
@@ -595,7 +597,6 @@ select:active, select:hover {
   margin-bottom: 2.1875em;
   border:2px solid #1A577F;
 }
-
 .madewithloveB {
   background: #282828;
   height: 30px;
@@ -603,7 +604,7 @@ select:active, select:hover {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  }
+}
   .madewithloveS {
     font-size: 15px;
     width:25%;
@@ -615,3 +616,4 @@ select:active, select:hover {
     justify-content: center; 
   } 
   
+  /* end of document*/
