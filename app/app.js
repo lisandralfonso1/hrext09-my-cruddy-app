@@ -43,16 +43,29 @@ var keyExists = function(key) {
 ///////////////////////////////////////////
 //event handlers for the buttons and ... possibly the inputboxes
   //preventdefault on button clicks
-$(document).ready(function() {
-  $('#createButton').click(function(event) {
-    event.preventDefault();
 
+
+  var addText = function(object) {
+    for (let key in object) {
+      if (typeof object[key] !== 'function' && key !== 'length') {
+        $(".results").append(`<div class="interests"> ${key}<span class="activities"> ${object[key]}</span></div>`)
+        console.log(object)
+    }
+    }
+  }
+
+   
+$(document).ready(function() {
+  myStorage = window.localStorage;
+
+  $('#createButton').click(function(event) {
     var currentKey = $("#keyInput").val();
     var currentValue = $("#valueInput").val();
     if (keyExists(currentKey)) {
-      //current key exists, do something error-handle-y
+      alert('You already have an interest with this name. Try replacing its activities instead!')
     } else {
       createItem(currentKey, currentValue);
+      addText(localStorage);
     }
   });
 
@@ -62,9 +75,25 @@ $(document).ready(function() {
     var currentValue = $("#valueInput").val();
     if (keyExists(currentKey)) {
       updateItem(currentKey, currentValue);
+      addText(localStorage);
     } else {
-      //current key doesnt exist, do stuff
+      alert('You have not added this interest yet. Try creating a new interest first!')
     }
+  });
+
+  $('#deleteButton').click(function(event) {
+    event.preventDefault();
+    var currentKey = $("#keyInput").val();
+    var currentValue = $("#valueInput").val();
+    if (keyExists(currentKey)) {
+      deleteItem(currentKey, currentValue);
+      addText(localStorage);
+    }
+  });
+
+  $('#clearButton').click(function(event) {
+    clearEverything();
+    $('.results').text('');
   });
 
   $("#cars").click(function(){
@@ -154,39 +183,3 @@ $(document).ready(function() {
 
 });
 
-
-
-
-// Interest 
-//  name => string
-//  listOfActivities => ['activity 1', ...]
- 
-// {
-//   name:'',
-//   listOfActivities: []
-// }
-       
-// /*
-// form to insert a new Interest, and to add/remove from listOfActivities
-// */
-
-// function addInterest(name, arrayOfActivities) {
-//   // add the Interest with a name
-//   // loop over arrayOfActivities
-// } 
-
-// function addActivity(name, interest){
-//   // adds activity to interest object
-//   // at key listOfActivities
-//   // i.e. interest.listOfActivities.push(name)
-// }
-
-// function removeInterest(name) {
-//   // removes the Interest with a name
-// }
-
-// function removeActivity(name, interest){
-//   // removes activity to interest object
-//   // at key listOfActivities
-//   // i.e. interest.listOfActivities.push(name)
-// }
