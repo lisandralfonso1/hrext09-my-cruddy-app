@@ -58,7 +58,6 @@ $(document).ready(function() {
 
   $('#updateButton').click(function(event) {
     event.preventDefault();
-
     var currentKey = $("#keyInput").val();
     var currentValue = $("#valueInput").val();
     if (keyExists(currentKey)) {
@@ -67,7 +66,96 @@ $(document).ready(function() {
       //current key doesnt exist, do stuff
     }
   });
+
+  $("#cars").click(function(){
+    console.log('words');
+    $(".display").text("if you enjoy cars you can always or");
+  });
+
+  $("#yoga").click(function(){
+    console.log('words');
+    $(".display").text("hi yoga");
+  });
+
+  $("#sing").click(function(){
+    console.log('words');
+    $(".display").text("hi sing");
+  });
+
+  $("#dance").click(function(){
+    console.log('words');
+    $(".display").text("hi dance");
+  });
+
+  $("#readWrite").click(function(){
+    console.log('words');
+    $(".display").text("hi read/write");
+  });
+
+  $("#sports").click(function(){
+    console.log('words');
+    $(".display").text("hi sports");
+  });
+ 
+  $("#watchtv").click(function(){
+    console.log('words');
+    $(".display").text("hi watchtv");
+  });
+
+  $("#sports").click(function(){
+    console.log('words');
+    $(".display").text("hi sports");
+  });
+
+  $("#playVideoGames").click(function(){
+    console.log('words');
+    $(".display").text("hi playVideoGames");
+  });
+
+  $("#spendTimeWithFamily").click(function(){
+    console.log('words');
+    $(".display").text("hi spendTimeWithFamily");
+  });
+
+  $("#goDancing").click(function(){
+    console.log('words');
+    $(".display").text("hi goDancing");
+  });
+
+  $("#art").click(function(){
+    console.log('words');
+    $(".display").text("hi art");
+  });
+
+  $("#jobRelatedActivities").click(function(){
+    console.log('words');
+    $(".display").text("hi jobRelatedActivities");
+  });
+
+  $("#travel").click(function(){
+    console.log('words');
+    $(".display").text("hi travel");
+  });
+
+  $("#outdoorActivities").click(function(){
+    console.log('words');
+    $(".display").text("hi outdoorActivities");
+  });
+
+  $("#volunteerWork").click(function(){
+    console.log('words');
+    $(".display").text("hi volunteerWork");
+  });
+
+  $("#puzzles").click(function(){
+    console.log('words');
+    $(".display").text("hi puzzles");
+  });
+
 });
+
+
+
 
 // Interest 
 //  name => string
@@ -77,7 +165,7 @@ $(document).ready(function() {
 //   name:'',
 //   listOfActivities: []
 // }
-
+       
 // /*
 // form to insert a new Interest, and to add/remove from listOfActivities
 // */
@@ -85,8 +173,7 @@ $(document).ready(function() {
 // function addInterest(name, arrayOfActivities) {
 //   // add the Interest with a name
 //   // loop over arrayOfActivities
-//     // addActivity(arrayOfActivities[i])
-// }
+// } 
 
 // function addActivity(name, interest){
 //   // adds activity to interest object
